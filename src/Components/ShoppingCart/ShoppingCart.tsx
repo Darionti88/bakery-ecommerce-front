@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
- const  ShoppingCart: React.FC<Props> = ({addToCart, removeFromCart})=> {
+    const  ShoppingCart: React.FC<Props> = ({addToCart, removeFromCart})=> {
     const {cartItems}= useContext(CartContext)
     const classes = useStyles();
 

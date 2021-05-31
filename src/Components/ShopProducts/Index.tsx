@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 
 export interface CartItemType {
-    images: {url: string},
+    images: {url: string} | any,
     categoria: string,
     _id: number | any,
     titulo: string,
