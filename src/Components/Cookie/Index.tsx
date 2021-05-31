@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './styles.css'
 
 
-type Props ={
+interface Props {
     direction: string
     img: string
     flavor: string

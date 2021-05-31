@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-type Props ={
+interface Props {
     item: CartItemType
     addToCart: (clickedItem: CartItemType)=> void
     removeFromCart: (_id: number)=> void

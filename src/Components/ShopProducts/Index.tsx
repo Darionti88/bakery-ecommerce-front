@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 
 
-export type CartItemType ={
+export interface CartItemType {
     images: {url: string},
     categoria: string,
     _id: number | any,

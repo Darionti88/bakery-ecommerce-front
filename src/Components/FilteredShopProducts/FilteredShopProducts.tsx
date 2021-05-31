@@ -8,6 +8,7 @@ import ProductCard from '../../Components/ProductCard/ProductCard';
 
 export type CartItemType ={
     images: {url: string} | Array<string>,
+    url?: any
     categoria: string,
     _id: number | any,
     titulo: string,
@@ -16,7 +17,7 @@ export type CartItemType ={
     cantidad: number | any,
 }
 
-type Props ={
+interface Props {
     apiUrl: string
 }
 

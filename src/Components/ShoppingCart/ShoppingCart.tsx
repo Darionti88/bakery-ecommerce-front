@@ -7,7 +7,7 @@ import {CartContext} from '../../Store/Store'
 import Button from '@material-ui/core/Button'
 
 
-type Props = {
+interface Props  {
     addToCart: (clickedItem: CartItemType)=> void
     removeFromCart: (_id: number) => void
 }
