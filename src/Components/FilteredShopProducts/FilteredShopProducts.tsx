@@ -7,7 +7,7 @@ import ProductCard from '../../Components/ProductCard/ProductCard';
 
 
 export type CartItemType ={
-    images: {url: string},
+    images: {url: string} | Array<string>,
     categoria: string,
     _id: number | any,
     titulo: string,
