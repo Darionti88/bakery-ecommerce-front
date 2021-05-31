@@ -1,28 +1,33 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-import Button from '@material-ui/core/Button'
 import './styles.css'
 
-export default function Cookie(props: { direction: string | undefined } & {img: string | undefined}) {
+
+type Props ={
+    direction: string
+    img: string
+    flavor: string
+}
+
+const Cookie: React.FC<Props> = ({direction, img, flavor})=> {
     return (
-        <div className={props.direction} >
+        <div className={direction} >
             <div className="product-desc">
                 <div className="product-title">
-                    <h2 className='title'><span className='chocolate'>CHOCO</span>COOKIES</h2>
+                    <h2 className='title'><span className='chocolate'>{flavor}</span>COOKIES</h2>
                 </div>
                 <div className="description">
-                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Est maxime nulla hic, temporibus ipsam sunt repudiandae 
-                        nesciunt dicta tempora illum.</h6>
+                    <h6>Todas nuestras galletas y horneados son hecho con los productos de mejor calidad del mercado.
+                        Tanto nuestras opciones Veganas como Sin Tacc están aprobadas por el Consejo Nacional del Buen Comer.
+                    </h6>
                 </div>
                 <div className="buy-section">
-                    <Link to='#'>Shop</Link>
-                    <Button className='add-button' variant='contained'>Add to cart</Button>
+                    <Link to='/shop'>Shop</Link>
                 </div>
             </div>
-                <img className='image' src={props.img} alt="choco-cookie"/>
-        
-            
+                <img className='image' src={img} alt="choco-cookie"/>
         </div>
     )
 }
+
+export default Cookie

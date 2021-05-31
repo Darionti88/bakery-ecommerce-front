@@ -1,3 +1,10 @@
-.MuiAppBar-colorPrimary  {
-    background-color:  none !important;
+
+
+.MuiPaper-elevation4 {
+    box-shadow: none !important;
+}
+
+.MuiAppBar-colorPrimary {
+    color: #fff;
+    /* background-color: #3f51b5; */
 }

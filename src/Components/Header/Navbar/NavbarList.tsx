@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import { makeStyles, useTheme, Theme, createStyles } from '@material-ui/core/styles';
+import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import {Link} from 'react-router-dom'
 
 
@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme: Theme) =>
 )
 export default function NavbarList() {
     const classes = useStyles()
-    const theme = useTheme()
 
 
     return (
