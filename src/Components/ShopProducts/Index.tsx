@@ -9,8 +9,16 @@ import ProductCard from '../../Components/ProductCard/ProductCard';
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
     root: {
-    
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+        width:'100&'
     },
+    gridItem:{
+        display:'flex',
+        alignItems:'center',
+        justifyContent:'center',
+    }
     }),
 );
 
@@ -74,9 +82,9 @@ const ShopProducts: React.FC = ()=> {
     }
 
     return (
-        <Grid item container md={12} spacing={1} justify='center' className={classes.root}>
+        <Grid item container md={12} spacing={2} justify='center' className={classes.root}>
             { isLoaded ? products.map(item =>(
-                    <Grid item key={item._id} xs={6} md={3}>
+                    <Grid item key={item._id} xs={6} md={3} className={classes.gridItem}>
                         <ProductCard
                         item={item}
                         handleAddToCart={handleAddToCart}

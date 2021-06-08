@@ -27,7 +27,13 @@ const useStyles = makeStyles((theme: Theme) =>
             display:'flex',
             alignItems: 'center',
             boxShadow:'none !important',
+            paddingLeft:'1.6rem',
             justifyContent:'space-between',
+        },
+        toolbar:{
+            display:'flex',
+            justifyContent:'space-between',
+            width:'100%',
         },
         container: {
             display: 'flex',
@@ -56,10 +62,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         menuButton: {
             marginRight: theme.spacing(2),
-          },
-          title: {
-            flexGrow: 1,
-          },
+        },
     }),
 );
 
@@ -116,8 +119,8 @@ export default function Navbar() {
     return (
 <>
         { isMatch ? 
-    <AppBar position="static">
-        <Toolbar className={classes.root}>
+    <AppBar position="static" className={classes.root}>
+        <Toolbar className={classes.toolbar}>
             <div>
                 <Button aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
                     <MenuIcon/>
@@ -150,8 +153,8 @@ export default function Navbar() {
         </Toolbar>
     </AppBar>
         :
-    <AppBar position="static" color='transparent'>
-        <Toolbar className={classes.root}>
+    <AppBar position="static" color='transparent' className={classes.root}>
+        <Toolbar className={classes.toolbar}>
             <div className={classes.container}>
                 <Link to='/'><img className={classes.logo} src={Logo} alt='logo'/></Link>
                 <div className={classes.justify}>

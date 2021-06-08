@@ -6,7 +6,7 @@ import './style.css'
 
 function Home() {
     return (
-        <div style={{marginTop: "2rem", minWidth:'100vw', display:'flex', flexDirection:'column'}}>
+        <div className='home'>
             <Cookie
             flavor='CHOCO'
             direction='cookie-container'

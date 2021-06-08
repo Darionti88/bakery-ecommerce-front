@@ -20,8 +20,8 @@ interface Props {
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
-      maxWidth: 280,
-      height:315,
+      width: '19rem',
+      height: '20rem',
       display:'flex',
       flexDirection:'column',
       paddingBottom:0,
